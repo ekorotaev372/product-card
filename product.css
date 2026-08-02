@@ -1,0 +1,18 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1110px;
+    justify-content: center;
+}
+
+
+.product_item{
+    list-style: none;
+    background-color: #F7F7FA;
+    width: 300px;
+    height: 500px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
