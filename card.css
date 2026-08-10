@@ -1,6 +1,7 @@
 .card {
     background-color: #F7F7FA;
-    padding: 0px;
+    padding-top: 15px;
+    padding: 15px;
 }
 
 .card_image {
@@ -12,6 +13,7 @@
     display: block;
     margin-top: 5px;
     margin-bottom: 15px;
+
 }
 
 .card_text p:first-child {
