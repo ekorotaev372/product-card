@@ -1,0 +1,31 @@
+.card {
+    background-color: #F7F7FA;
+    padding-top: 15px;
+    padding: 15px;
+}
+
+.card_image {
+    display: block;
+    margin: auto;
+}
+
+.card_text {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.card_text p:first-child {
+    margin-top: 0;
+}
+
+.card_tag  {
+    color:chocolate;
+}
+
+.card_name {
+    font-size: 20px;
+    margin: 0;
+    line-height: 27px;
+}

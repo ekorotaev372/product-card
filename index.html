@@ -5,126 +5,261 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="title.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="conteiner.css">
+    <link rel="stylesheet" href="compound.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="button.css">
 </head>
 
 <body>
-  <h1>Выбери свой продукт</h1>
-  <ul>
-    <li>
-      <img src="img/photo1.png" alt="Увлажняющий мусс" width="200" height="200">
+  <script type="module" scr="homework9.js"></script>
+  <main class="catalog">
+    <div class="conteiner catalog_conteiner">
+      <h1 class="title catalog_title">Выбери свой продукт</h1>
+        <button id="color-changer-first-button">Сменить цвет первой карточки</button>
+        <button id="color-changer-all-button">Сменить цвет всех карточек</button>
+        <button id="open-google">Открыть Google</button>
+        <button id="outputConsoleLog">Вывести в консоль</button>
+        <button id="changeColorButton">Сменить цвет кнопки</button>
+      <ul class="products clear_list">
 
-      <p>для нормальной кожи</p>
+        <li class="product_item card">
 
-      <h2>Увлажняющий мусс</h2>
+        <img src="img/photo1.png" alt="Увлажняющий мусс" width="200" height="200" class ="card_image">
 
-      <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+          <p class="card_tag">для нормальной кожи</p>
 
-      <span>Состав: </span>
+          <h2 class="card_name">Увлажняющий мусс</h2>
+          <div class="card_text">
+            <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+          </div>
 
-      <ul>
-        <li>активные натуральные комплексы</li>
-        <li>витамины С, А, РР, В И Е</li>
-        <li>солнцезащитные компоненты</li>
-      </ul>
+          <div class="card_compound compound">
 
-      <b>Цена:
-      </b>
-      <span>2 750 ₽
-      </span>
+            <span class="compound_name">Состав: </span>
+
+            <ul class="compound_list">
+              <li>активные натуральные комплексы</li>
+              <li>витамины С, А, РР, В И Е</li>
+              <li>солнцезащитные компоненты</li>
+            </ul>
+
+          </div>
+
+          <div class="card_price">
+            <b>Цена:
+            </b>
+            <span>2 750 ₽
+            </span>
+          </div>
+      
+      <button class="button">Купить</button>
     </li>
 
-    <li>
-      <img src="img/photo2.png" alt="Увлажняющая маска" width="200" height="200">
+    <li class="product_item card">
+      <img src="img/photo2.png" alt="Увлажняющая маска" width="200" height="200" class ="card_image">
 
-      <p>для нормальной кожи</p>
+      <p class="card_tag">для нормальной кожи</p>
 
-      <h2>Увлажняющая маска</h2>
+      <h2 class="card_name">Увлажняющая маска</h2>
+      <div class="card_text">
+        <p>Способствует удерживанию влаги в верхних слоях кожи.</p>
+      </div>
+      <div class="card_compound">
 
-      <p>Способствует удерживанию влаги в верхних слоях кожи.</p>
+        <span class="compound_name">Состав: </span>
 
-      <span>Состав: </span>
+        <ul class="compound_list">
+          <li>воски </li>
+          <li>минералы </li>
+          <li>масла </li>
+        </ul>
+      </div>
 
-      <ul>
-        <li>воски </li>
-        <li>минералы </li>
-        <li>масла </li>
-      </ul>
-
+     <div class="card_price">
       <b> Цена:
       </b>
       <span> 3 500 ₽
       </span>
+      </div>
+
+      <button class="button">Купить</button>
     </li>
 
-    <li>
-      <img src="img/photo3.png" alt="Гель для умывания" width="200" height="200">
+    <li class="product_item card">
+      <img src="img/photo3.png" alt="Гель для умывания" width="200" height="200" class ="card_image">
 
-      <p>для нормальной кожи</p>
+      <p class="card_tag">для нормальной кожи</p>
 
-      <h2>Гель для умывания</h2>
+      <h2 class="card_name">Гель для умывания</h2>
+      <div class="card_text">
+        <p>Интенсивно очищает, не повреждает защитный барьер кожи.</p>
+      </div>
 
-      <p>Интенсивно очищает, не повреждает защитный барьер кожи.</p>
+      <span class="compound_name">Состав: </span>
 
-      <span>Состав: </span>
+      <div class="card_compound">
 
-      <ul>
+      <ul class="compound_list">
         <li>минералы</li>
         <li>витамины С, А, РР, В И Е</li>
         <li>солнцезащитные компоненты</li>
       </ul>
 
+      </div>
+
+      <div class="card_price">
       <b> Цена:
       </b>
       <span> 1 650 ₽
       </span>
+      </div>
+
+      <button class="button">Купить</button>
     </li>
 
-     <li>
-      <img src="img/photo4.png" alt="Подарочный набор №1" width="200" height="200">
+     <li class="product_item card">
+      <img src="img/photo4.png" alt="Подарочный набор №1" width="200" height="200" class ="card_image">
 
-      <p>для нормальной кожи</p>
+      <p class="card_tag">для нормальной кожи</p>
 
-      <h2>Подарочный набор №1</h2>
+      <h2 class="card_name">Подарочный набор №1</h2>
+      <div class="card_text">
+        <p>Набор, состоящий из увлажняющего крема и маски.</p>
+      </div>
+      <span class="compound_name">Состав: </span>
 
-      <p>Набор, состоящий из увлажняющего крема и маски.</p>
+      <div class="card_compound">
 
-      <span>Состав: </span>
-
-      <ul>
+      <ul class="compound_list">
         <li>воски</li>
         <li>минералы</li>
         <li>масла</li>
       </ul>
+      </div>
 
+      <div class="card_price">
       <b> Цена:
       </b>
       <span> 4 750 ₽
       </span>
+      </div>
+      <button class="button">Купить</button>
     </li>
 
-    <li>
-      <img src="img/photo5.png" alt="Подарочный набор №5" width="200" height="200">
+     <li class="product_item card">
+      <img src="img/photo5.png" alt="Подарочный набор №5" width="200" height="200" class ="card_image">
 
-      <p>для нормальной кожи</p>
+      <p class="card_tag">для нормальной кожи</p>
 
-      <h2>Подарочный набор №5</h2>
+      <h2 class="card_name">Подарочный набор №5</h2>
+      <div class="card_text">
+        <p>Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+      </div>
 
-      <p>Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+      <span class="compound_name">Состав: </span>
 
-      <span>Состав: </span>
+      <div class="card_compound">
+        <ul class="compound_list">
+          <li>воски</li>
+          <li>минералы</li>
+          <li>масла</li>
+        </ul>
+      </div>
 
-      <ul>
-        <li>воски</li>
-        <li>минералы</li>
-        <li>масла</li>
-      </ul>
-
+      <div class="card_price">
       <b> Цена:
       </b>
       <span> 7 520 ₽
       </span>
+      </div>
+      <button class="button">Купить</button>
     </li>
   </ul>
+  </div>
+</main>
+<script src="main.js"></script>
+<script src="homework7.js"></script>
+<script src="homework8.js"></script>
+<script src="homework9.js"></script>
+<script scr="comments.js"></script>
+<script>
+const Comments = [
+    {
+        postId: 1,
+        id: 1,
+        name: "id labore ex et quam laborum",
+        email: "Eliseo@gardner.biz",
+        body: "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+        postId: 1,
+        id: 2,
+        name: "quo vero reiciendis velit similique earum",
+        email: "Jayne_Kuhic@sydney.com",
+        body: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+    },
+    {
+        postId: 1,
+        id: 3,
+        name: "odio adipisci rerum aut animi",
+        email: "Nikita@garfield.biz",
+        body: "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
+    },
+    {
+        postId: 1,
+        id: 4,
+        name: "alias odio sit",
+        email: "Lew@alysha.tv",
+        body: "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+    },
+    {
+        postId: 1,
+        id: 5,
+        name: "vero eaque aliquid doloribus et culpa",
+        email: "Hayden@althea.biz",
+        body: "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
+    },
+    {
+        postId: 2,
+        id: 6,
+        name: "et fugit eligendi deleniti quidem qui sint nihil autem",
+        email: "Presley.Mueller@myrl.com",
+        body: "doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in"
+    },
+    {
+        postId: 2,
+        id: 7,
+        name: "repellat consequatur praesentium vel minus molestias voluptatum",
+        email: "Dallas@ole.me",
+        body: "maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor"
+    },
+    {
+        postId: 2,
+        id: 8,
+        name: "et omnis dolorem",
+        email: "Mallory_Kunze@marie.org",
+        body: "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque"
+    },
+    {
+        postId: 2,
+        id: 9,
+        name: "provident id voluptas",
+        email: "Meghan_Littel@rene.us",
+        body: "sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus"
+    },
+    {
+        postId: 2,
+        id: 10,
+        name: "eaque et deleniti atque tenetur ut quo ut",
+        email: "Carmen_Keeling@caroline.name",
+        body: "voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis"
+    }]
+</script>
 </body>
 
 </html>
