@@ -49,14 +49,14 @@ export const products = [
   function renderCatalog(dataArray) { 
    } renderCatalog(products);
 
+
 const productDescriptions = products.reduce((accumulator, currentProduct) => {
-
 accumulator[currentProduct.name] = currentProduct.description;
-
   return accumulator;
 }, {});
-
 console.log(productDescriptions);
+
+
 
 function getCardsCount() {
   let count;
@@ -77,32 +77,35 @@ function getCardsCount() {
     }
   }
 }
-        function renderProducts(dataArray, limit) {
-           const container = document.querySelector('.products');
-           if (!container) return;
-          container.innerHTML = '';
-        const cardsToRender = dataArray.slice(0, limit);
-        const htmlString = cardsToRender.map(product => `
-          <li class="product_item card"> 
-          <img src="${product.image}" 
-          alt="${product.alt}"
-          width="200" height="200" 
-          class="card_image"> 
-          <p class="card_tag">${product.tag}</p>
-          <h2 class="card_name">${product.name}</h2> 
-          <div class="card_text"> 
+
+
+  function renderProducts(dataArray, limit) {
+  const container = document.querySelector('.products');
+    if (!container) return;
+    container.innerHTML = '';
+  const cardsToRender = dataArray.slice(0, limit);
+  const htmlString = cardsToRender.map(product => `
+    <li class="product_item card"> 
+      <img src="${product.image}" 
+        alt="${product.alt}"
+        width="200" height="200" 
+      class="card_image"> 
+      <p class="card_tag">${product.tag}</p>
+      <h2 class="card_name">${product.name}</h2> 
+        <div class="card_text"> 
           <p>${product.description}</p> 
-          </div>
-          <div class="card_compound compound">
+        </div>
+        <div class="card_compound compound">
           <span class="compound_name">Состав: </span>
           <ul class="compound_list"> ${product.compound.map(item =>
-          `<li>${item}</li>`).join('')} 
+            `<li>${item}</li>`).join('')} 
           </ul>
-          </div> <div class="card_price">
+        </div> 
+        <div class="card_price">
           <b>Цена:</b> <span>${product.price} ₽</span>
-          </div>
+        </div>
           <button class="button">Купить</button> 
-          </li> `).join('');
+    </li> `).join('');
           container.insertAdjacentHTML('beforeend', htmlString); }
           document.addEventListener('DOMContentLoaded', () => { 
           const amount = getCardsCount();
