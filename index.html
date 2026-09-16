@@ -181,12 +181,164 @@
   </ul>
   </div>
 </main>
+   <footer class="footer__container">
+            <div class="footer__columns">
+                <div class="footer__column-first">
+                    <div class="footer__product-introduction">
+                        <h2>Product Cards</h2>
+                        <p>У Нас Самые Лучшие Продукты Для Кожи!</p>
+                        </div>
+                    <div class="product__icon">
+                        <img src="/img/telegramIcon1.png" alt="Telegram" />
+                        <img src="/img/vkontakteIcon1.png" alt="VK" />
+                        </div>
+                        </div>
+                <div class="footer__column-second">
+                    <p class="footer__text">Подпишись на наши акции:</p>
+                    <form class="footer__form" id="footer__submit-form">
+                        <input
+                            type="email"
+                            name="email"
+                            class="footer__input"
+                            placeholder="Введи Email..."
+                            required
+                        />
+                        <button type="submit" class="footer__submit">
+                            Подписаться
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__column-third">
+                    <p class="footer__link-help">Быстрые ссылки</p>
+                    <nav>
+                        <ul class="footer__menu">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            </ul>
+                    </nav>
+                        </div>
+                        </div>
+            <div class="footer__column-last">
+                <button
+                    type="button"
+                    class="footer__registration"
+                    onclick="
+                        document
+                            .querySelector('.overlay')
+                            .classList.add('active')
+                    "
+                >
+                    Регистрация
+                </button>
+                <div class="overlay">
+                    <div class="modal">
+                        <form
+                            class="registration__form"
+                            id="registration__submit-form"
+                        >
+                            <label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="registration__name"
+                                    pattern="^[a-zA-Zа-яА-ЯЁё]+$"
+                                    placeholder="пример: Егор"
+                                    data-error-message="Разрешены символы латиницы,
+                                кириллицы."
+                                    aria-describedby="name-error"
+                                    required
+                        />
+                            </label>
+                            <label>
+                                <input
+                                    type="text"
+                                    name="surname"
+                                    class="registration__surname"
+                                    pattern="^[a-zA-Zа-яА-ЯЁё]+$"
+                                    placeholder="пример: Коротаев"
+                                    data-error-message="Разрешены символы латиницы,
+                                кириллицы."
+                                    aria-describedby="surname-error"
+                                    required
+                                />
+                            </label>
+                            <label class="footer__label-dateOfBirth">
+                                Введите дату рождения
+                                <input
+                                    type="date"
+                                    id="dateOfBirth"
+                                    name="dateOfBirth"
+                                    class="registration__dateOfBirth"
+                                    min="1900-01-01"
+                                    max="2026-12-31"
+                                    required
+                                />
+                            </label>
+                            <label>
+                                <input
+                                    type="text"
+                                    name="login"
+                                    class="registration__login"
+                                    pattern="^[a-zA-Z0-9_\-]+$"
+                                placeholder="пример: Korotaev"
+                                    data-error-message="Разрешены символы латиницы,
+                                цифры,тире и нижнее подчеркивание"
+                                    minlength="1"
+                                    maxlength="10"
+                                    aria-describedby="login-error"
+                                    required
+                                />
+                            </label>
+                            <input
+                                type="password"
+                                name="password"
+                                class="registration__password"
+                                placeholder="Введите ваш пароль"
+                                pattern="^\S{8,20}$"
+                                data-error-message="Минимум 8 символов,пробелы запрещены!"
+                                required
+                            />
+                            <input
+                                type="password"
+                                name="passwordConfirm"
+                                class="registration__password-confirm"
+                                placeholder="Подтвердите ваш пароль"
+                                required
+                            />
+                            <button type="submit">Зарегистрироваться</button>
+                        </form>
+                        <button
+                            type="button"
+                            class="registration__button-close"
+                            onclick="
+                                document
+                                    .querySelector('.overlay')
+                                    .classList.remove('active')
+                            "
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>       
+            </li>
+        </template>
+                </div>
+                <p>www.product-cards.com©all right reserve</p>
+            </div>
+        </footer>
+    </body>
+</html>
+</html>
+
+  </form>
 <script src="main.js"></script>
 <script src="homework7.js"></script>
 <script src="homework8.js"></script>
 <script type="module" src="homework9.js"></script>
-<script scr="comments.js"></script>
+<script src="comments.js"></script>
 <script type="module" src="homework10.js"></script>
+<script src="homework11.js"></script>
 <script>
 const Comments = [
     {
