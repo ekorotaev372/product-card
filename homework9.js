@@ -23,9 +23,9 @@ const movies = [
 
 function checkMovie(movieName) {
     if (movies.includes(movieName)) {
-        console.log(`Фильм "${movieName}" найден в коллекции!`);
+        return(`Фильм "${movieName}" найден в коллекции!`);
     } else {
-        console.log(`Фильм "${movieName}" не найден в коллекции.`);
+        return(`Фильм "${movieName}" не найден в коллекции.`);
     }
 }
 
@@ -37,10 +37,10 @@ function reverseArray(arr) {
 }
 
 
-import { Comments } from "./comments.js";
+import { comments } from "./comments.js";
 
 console.log('Все комментарии:');
-console.log(Comments);
+console.log(comments);
 
 const filterCommentsByEmail = (comments) => {
     return comments.filter(comment =>
@@ -48,20 +48,20 @@ const filterCommentsByEmail = (comments) => {
     );
 };
 
-const comEmailComments = filterCommentsByEmail(Comments);
+const comEmailComments = filterCommentsByEmail(comments);
 
 console.log('\nКомментарии с email .com:');
 console.log(comEmailComments);
 
 
 //массив тех комментариев, почта пользователей которых содержит ".com"
-const filteredComments = Comments.filter(comment => comment.email.includes('.com'));
+const filteredComments = comments.filter(comment => comment.email.includes('.com'));
 
 console.table(filteredComments);
 
 
 
-const updatedComments = Comments.map(comment => {
+const updatedComments = comments.map(comment => {
     let newPostId;
     if (comment.id <= 5) {
         newPostId = 2;
@@ -85,8 +85,8 @@ const simplifiedComments = Comments.map(comment => ({
 console.table(simplifiedComments);
 
 //Перебираем массив, добавляем объектам свойство isInvalid и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false.
-Comments.forEach(comment => {
+comments.forEach(comment => {
     comment.isInvalid = comment.body.length > 180;
 });
 
-console.table(Comments);
+console.table(comments);
