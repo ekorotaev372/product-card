@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Async Users</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; flex-direction: column; }
+        #status { font-size: 1.2em; margin-bottom: 20px; }
+        .error { color: #d9534f; }
+        .info { color: #5bc0de; }
+        .cards-container { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: relative; width: 200px; text-align: center; }
+        .card button.delete-one { position: absolute; top: 5px; right: 5px; background: #d9534f; color: #fff; border: none; border-radius: 50%; width: 24px; height: 24px; cursor: pointer; }
+        .controls { margin-top: 30px; display: flex; gap: 10px; }
+        button { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; background-color: #0275d8; color: #fff; }
+        button:hover { background-color: #025aa5; }
+    </style>
+</head>
+<body>
+    <div id="status">Данные загружаются...</div>
+    <div class="cards-container" id="cardsContainer"></div>
+    <div class="controls">
+        <button id="getAllBtn">Получить всех пользователей</button>
+        <button id="deleteAllBtn">Удалить все карточки</button>
+    </div>
+
+    <script src="async.js"></script>
+</body>
+</html>
